@@ -8,30 +8,30 @@ struct teste_{
 	int escolha[9], i;
 };
 
-struct teste_ teste;
+struct teste_ escolher;
 
 void sim_nao(){
-	printf("\n1 - Para Sim. 2 - Para N„o.\n");
+	printf("\n1 - Para Sim. 2 - Para N√£o.\n");
 }
 void menu(){
-printf("\nGÍneros: \n");
+printf("\nG√™neros: \n");
 printf("\n1 - Aventura ");
 printf("\n2 - Terror ");
 printf("\n3 - Distopia");
 }
 
 void Livros(){
-	printf("\n \n Livros DisponÌveis: ");
+	printf("\n \n Livros Dispon√≠veis: ");
 
 printf("\n\n1 - Harry Poter e a pedra filosofal");
-printf("\n\n2 - O espadachim de carv„o");
+printf("\n\n2 - O espadachim de carv√£o");
 printf("\n\n3 - O alquimista");
-printf("\n\n4 - Dr·cula");
+printf("\n\n4 - Dr√°cula");
 printf("\n\n5 - It a coisa");
-printf("\n\n6 - O cemitÈrio");
-printf("\n\n7 - Laranja mec‚nica");
-printf("\n\n8 - A revoluÁ„o dos bichos");
-printf("\n\n9 - Admir·vel mundo novo");
+printf("\n\n6 - O cemit√©rio");
+printf("\n\n7 - Laranja mec√¢nica");
+printf("\n\n8 - A revolu√ß√£o dos bichos");
+printf("\n\n9 - Admir√°vel mundo novo");
 }
 
 int main(){
@@ -40,24 +40,24 @@ int main(){
 	int numero, livro = 0;
 	
 	char Cartegoria[3][250] = {"Livros de aventuras: ", "Livros de Terror: ", "Livros de Distopias: "};
-	char infoLivro[9][250] = {"Harry Poter e a pedra filosofal.", "O espadachim do carv„o.", "O alquimista.", "Dr·cula.", "IT a coisa.", "O cemitÈrio.", "Laranja mec‚nica.", "A revoluÁ„o dos bichos.", "Admir·vel mundo novo."};
+	char infoLivro[9][250] = {"Harry Poter e a pedra filosofal.", "O espadachim do carv√£o.", "O alquimista.", "Dr√°cula.", "IT a coisa.", "O cemit√©rio.", "Laranja mec√¢nica.", "A revolu√ß√£o dos bichos.", "Admir√°vel mundo novo."};
 						
 int i,j;
-int genero, escolha;
+int genero;
 	
 menu();
 
-printf("\n \nDigite o n˙mero de acordo com o que vocÍ deseja: ");
-scanf("%i" ,&genero);	
+printf("\n \nDigite o n√∫mero de acordo com o que voc√™ deseja: ");
+scanf("%i",&numero);	
 	
 	
-switch (genero){
+switch (numero){
 
 case 1:
 for(i = 0; i < 1; i++){
 printf("\n%s \n\n",Cartegoria[i],infoLivro[i][j]);
 for(j = 0; j < 3; j++){
-	printf("%d™ %s \n",j + 1,infoLivro[j]);
+	printf("%d¬™ %s \n",j + 1,infoLivro[j]);
 }
 }
 break;
@@ -66,7 +66,7 @@ case 2:
 for(i = 1; i < 2; i++){
 printf("\n%s \n\n",Cartegoria[i],infoLivro[i][j]);
 for(j = 3; j < 6; j++){
-	printf("%d™ %s \n",j + 1,infoLivro[j]);
+	printf("%d¬™ %s \n",j + 1,infoLivro[j]);
 }
 }
 break;	
@@ -75,7 +75,7 @@ case 3:
 for(i = 2; i < 3; i++){
 printf("\n%s \n\n",Cartegoria[i],infoLivro[i][j]);
 for(j = 6; j < 9; j++){
-	printf("%d™ %s \n",j + 1,infoLivro[j]);
+	printf("%d¬™ %s \n",j + 1,infoLivro[j]);
 }
 }
 break;	
@@ -83,85 +83,85 @@ break;
 
 do{
 	
-printf("\n\nPara mais informaÁıes, Digite o n˙mero do livro: ");
-scanf("%i" ,&teste.escolha[i]);
+printf("\n\nPara mais informa√ß√µes, Digite o n√∫mero do livro: ");
+scanf("%i" ,&escolher.escolha[i]);
 
 livro++;
 
 fflush(stdin);
 
-switch(teste.escolha[i]){
+switch(escolher.escolha[i]){
 	
 case 1:
 printf("\nNome do livro: %s",infoLivro[0]);
-printf("\nAno de lanÁamento: 1997");
-printf("\nN˙mero de p·ginas: 208");
+printf("\nAno de lan√ßamento: 1997");
+printf("\nN√∫mero de p√°ginas: 208");
 preco = 27;
-printf("\nPreÁo: R$%.2f",preco);
+printf("\nPre√ßo: R$%.2f",preco);
 break;
 
 case 2:
 printf("\nNome do livro: %s",infoLivro[1]);
-printf("\nAno de lanÁamento: 2013");
-printf("\nN˙mero de p·ginas: 256");
+printf("\nAno de lan√ßamento: 2013");
+printf("\nN√∫mero de p√°ginas: 256");
 preco = 25;		
-printf("\nPreÁo: R$%.2f",preco);
+printf("\nPre√ßo: R$%.2f",preco);
 break;	
 
 case 3:
 printf("\nNome do livro: %s",infoLivro[2]);
-printf("\nAno de lanÁamento: 1988");
-printf("\nN˙mero de p·ginas: 208");
+printf("\nAno de lan√ßamento: 1988");
+printf("\nN√∫mero de p√°ginas: 208");
 preco = 17;	
-printf("\nPreÁo: R$%.2f",preco);	
+printf("\nPre√ßo: R$%.2f",preco);	
 break;	
 
 case 4:
 printf("\nNome do livro: %s",infoLivro[3]);
-printf("\nAno de lanÁamento: 1897");
-printf("\nN˙mero de p·ginas: 368");
+printf("\nAno de lan√ßamento: 1897");
+printf("\nN√∫mero de p√°ginas: 368");
 preco = 22;	
-printf("\nPreÁo: R$%.2f",preco);	
+printf("\nPre√ßo: R$%.2f",preco);	
 break;	
 
 case 5:
 printf("\nNome do livro: %s",infoLivro[4]);
-printf("\nAno de lanÁamento: 1986");
-printf("\nN˙mero de p·ginas: 1104");	
+printf("\nAno de lan√ßamento: 1986");
+printf("\nN√∫mero de p√°ginas: 1104");	
 preco = 29;
-printf("\nPreÁo: R$%.2f",preco);	
+printf("\nPre√ßo: R$%.2f",preco);	
 break;
 
 case 6:
 printf("\nNome do livro: %s",infoLivro[5]);
-printf("\nAno de lanÁamento: 1983");
-printf("\nN˙mero de p·ginas: 537");	
+printf("\nAno de lan√ßamento: 1983");
+printf("\nN√∫mero de p√°ginas: 537");	
 preco = 35;	
-printf("\nPreÁo: R$%.2f",preco);
+printf("\nPre√ßo: R$%.2f",preco);
 break;	
 
 case 7:
 printf("\nNome do livro: %s",infoLivro[6]);
-printf("\nAno de lanÁamento: 1962");
-printf("\nN˙mero de p·ginas: 288");
+printf("\nAno de lan√ßamento: 1962");
+printf("\nN√∫mero de p√°ginas: 288");
 preco = 16;	
-printf("\nPreÁo: R$%.2f",preco);
+printf("\nPre√ßo: R$%.2f",preco);
 break;	
 
 case 8:
 printf("\nNome do livro: %s",infoLivro[7]);
-printf("\nAno de lanÁamento: 1945");
-printf("\nN˙mero de p·ginas: 152");	
+printf("\nAno de lan√ßamento: 1945");
+printf("\nN√∫mero de p√°ginas: 152");	
 preco = 10;
-printf("\nPreÁo: R$%.2f",preco);
+printf("\nPre√ßo: R$%.2f",preco);
 break;
 
 case 9:
 printf("\nNome do livro: %s",infoLivro[8]);
-printf("\nAno de lanÁamento: 1932");
-printf("\nN˙mero de p·ginas: 258");
+printf("\nAno de lan√ßamento: 1932");
+printf("\nN√∫mero de p√°ginas: 258");
 preco = 18;
-printf("\nPreÁo: R$%.2f",preco);	
+printf("\nPre√ßo: R$%.2f",preco);	
 	
 break;
 }
